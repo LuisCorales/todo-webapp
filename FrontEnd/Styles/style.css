@@ -8,7 +8,13 @@ body
 {
     background: rgb(50,50,50);
     color: white;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1
+{
+    font-weight: normal;
+    font-size: 3rem;
 }
 
 header
@@ -135,6 +141,8 @@ select
     width: 10rem;
     cursor: pointer;
     padding: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
 }
 
 .select::after{
