@@ -2,4 +2,4 @@
  
 A TODO Web app made in JavaScript.
 
-![](https://github.com/LuisCorales/crud-hotel-java/blob/main/Preview/preview.jpg)
+![](https://media.giphy.com/media/Ag0Zej5FQhqxncudI9/giphy.gif)
