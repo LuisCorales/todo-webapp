@@ -12,7 +12,9 @@ filterOption.addEventListener('click', filterTodo);
 
 //FUNCTIONS
 
-//Adds a new TODO item to the list
+/** 
+ * Adds a new TODO item to the list
+ **/
 function addTodo(event) 
 {
     //Prevent form from submitting
@@ -50,6 +52,9 @@ function addTodo(event)
     todoInput.value = "";
 }
 
+/** 
+ * Deletes or checks a TODO item
+ **/
 function deleteCheck(e) 
 {
     const item = e.target;
@@ -77,7 +82,9 @@ function deleteCheck(e)
     }
 }
 
-//Filters the TODO items if completed or not
+/**
+ * Filters the TODO items if completed or not
+ **/
 function filterTodo(e) 
 {
     const todos = todoList.childNodes;
@@ -114,7 +121,9 @@ function filterTodo(e)
     });
 }
 
-//Save TODO items to local
+/** 
+ * Save TODO items to local
+ **/
 function saveLocalTodos(todo) 
 {
     const todos = getLocalTodos();
@@ -123,6 +132,9 @@ function saveLocalTodos(todo)
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 
+/**
+ * Get and set the TODO items from the local storage to the list
+ **/
 function getTodos() 
 {
     getLocalTodos().forEach(function(todo)
@@ -154,11 +166,9 @@ function getTodos()
     });
 }
 
-function addTodoElements()
-{
-    a
-}
-
+/**
+ * Remove TODO items from the local storage
+ **/
 function removeLocalTodos(todo) 
 {
     const todos = getLocalTodos();
@@ -168,6 +178,9 @@ function removeLocalTodos(todo)
     localStorage.setItem('todos', JSON.stringify(todos));
 }
 
+/**
+ * Gets all TODO items from the local storage
+ **/
 function getLocalTodos() 
 {
     //Check if not empty
